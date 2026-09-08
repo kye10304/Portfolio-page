@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <div>My Portfolio</div>
+
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="about">
+                <h1>About Me</h1>
+
+                <p>Hello, my name is Kyrylo. I'm Junior Developer</p>
+
+                <p>
+                    Junior Backend Developer focused on building RESTful APIs
+                    with Node.js, NestJS, and Express.js. Familiar with
+                    PostgreSQL and MongoDB, authentication using JWT and bcrypt,
+                    request validation, API documentation with Swagger, and
+                    automated testing with Jest and Supertest. Strong interest
+                    in backend architecture, clean and maintainable code, and
+                    building reliable serverside applications. Currently focused
+                    on growing practical backend development skills through
+                    production-oriented pet projects
+                </p>
+
+                <ul>
+                    <li>
+                        <a
+                            href="https://github.com/kye10304"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="https://www.linkedin.com/in/kyrylo-shvetsov/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Nest.js</li>
+                </ul>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+
+                <article>
+                    <h3>Web Store</h3>
+
+                    <p>
+                        A simple online store built with JavaScript and
+                        Express.js framework for Node.js
+                    </p>
+
+                    <a
+                        href="https://github.com/kye10304/web-store-backend"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >View project</a
+                    >
+                </article>
+
+                <article>
+                    <h3>Movie review API</h3>
+
+                    <p>
+                        REST API for browsing movies, posting reviews, and
+                        managing users. Built with NestJS, MongoDB (Mongoose),
+                        JWT auth, and Swagger docs.
+                    </p>
+
+                    <a
+                        href="https://github.com/kye10304/movie-review-API"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >View Project</a
+                    >
+                </article>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Project</th>
+
+                            <th>Technology</th>
+
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Web Store</td>
+
+                            <td>Express.js</td>
+
+                            <td>Completed</td>
+                        </tr>
+
+                        <tr>
+                            <td>Movie Review API</td>
+
+                            <td>Nest.js</td>
+
+                            <td>Completed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="contact">
+                <h2>Contact</h2>
+
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" />
+
+                    <br /><br />
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" />
+
+                    <br /><br />
+
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message"></textarea>
+
+                    <br /><br />
+
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2026 My Portfolio</p>
+        </footer>
+    </body>
+</html>
