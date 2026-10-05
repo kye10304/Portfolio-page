@@ -1,8 +1,10 @@
+import { FaGithub } from "react-icons/fa";
+
 function Projects() {
     const projects = [
         {
             title: 'Web Store',
-            description: 'REST API for an online store',
+            description: 'REST API for an online store with authentication, products, orders and role-based access.',
             technologies: [
                 'Node.js',
                 'Express',
@@ -15,7 +17,7 @@ function Projects() {
         },
         {
             title: 'Movie Review API',
-            description: 'REST API for movie reviews',
+            description: 'REST API for movie reviews with authentication, validation and MongoDB data storage.',
             technologies: ['NestJS', 'MongoDB', 'Mongoose', 'Jest'],
             github: 'https://github.com/kye10304/movie-review-API',
         },
@@ -39,6 +41,7 @@ function Projects() {
                 </div>
 
                 <a href={project.github} target="_blank" rel="noreferrer">
+                    <FaGithub />
                     Github
                 </a>
             </article>

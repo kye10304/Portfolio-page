@@ -14,11 +14,14 @@ html {
     max-width: 1100px;
     margin: 0 auto;
     padding: 20px;
+
+    border-bottom: 1px solid #ddd;
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .nav {
@@ -156,19 +159,25 @@ h3 {
 }
 
 .project-card {
-    padding: 20px;
+    padding: 24px;
+
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 12px;
+
     background-color: white;
+
     transition: transform 0.2s ease;
 }
 
 .project-card:hover {
     transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .project-card a {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     padding: 10px 18px;
     border: 1px solid #333;
     border-radius: 6px;
@@ -239,4 +248,107 @@ footer {
         width: 100%;
         max-width: 250px;
     }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+}
+
+.app {
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app.dark {
+    background-color: #222;
+    color: #f5f5f5;
+}
+
+.app.dark .header {
+    border-bottom: 1px solid #555;
+}
+
+.app.dark .about {
+    border-top-color: #555;
+}
+
+.app.dark .skill-card,
+.app.dark .project-card {
+    background-color: #333;
+    color: #f5f5f5;
+    border-color: #555;
+}
+
+.app.dark .skill-card:hover,
+.app.dark .project-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.app.dark .hero-buttons a,
+.app.dark .project-card a,
+.app.dark .contact-links a {
+    border-color: #aaa;
+}
+
+.app.dark .hero-buttons a:hover,
+.app.dark .project-card a:hover,
+.app.dark .contact-links a:hover {
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+.app.dark .skill-card svg {
+    color: #f5f5f5;
+}
+
+.app.dark .project-technologies span {
+    border-color: #555;
+    color: #f5f5f5;
+}
+
+.app.dark footer {
+    border-top-color: #555;
+    color: #aaa;
+}
+
+.app.dark .nav a:hover {
+    color: #aaa
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    width: 40px;
+    height: 40px;
+
+    border: 1px solid #333;
+    border-radius: 50%;
+
+    background-color: white;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.theme-toggle:hover {
+    background-color: #333;
+    color: white;
+}
+
+.app.dark .theme-toggle {
+    border-color: #aaa;
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+.app.dark .theme-toggle:hover {
+    background-color: #f5f5f5;
+    color: #222;
 }

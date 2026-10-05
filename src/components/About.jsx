@@ -10,7 +10,9 @@ function About() {
 
             <p>
                 I work with PostgreSQL and MongoDB and have experience with
-                authentication, validation, testing and API documentation.
+                authentication, validation, testing and API documentation. I
+                focus on writing clean, maintainable code and building reliable
+                backend services.
             </p>
         </section>
     );

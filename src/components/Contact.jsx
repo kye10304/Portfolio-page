@@ -1,11 +1,16 @@
 function Contact() {
     return (
         <section id="contact">
-            <h2>Contact</h2>
+            <h2>Get in Touch</h2>
 
-            <p>Email: kshvetsov506@gmail.com</p>
+            <p>
+                I'm open to backend development opportunities and interesting
+                projects.
+            </p>
 
             <div className="contact-links">
+                <a href="mailto:kshvetsov506@gmail.com">Email</a>
+
                 <a
                     href="https://github.com/kye10304"
                     target="_blank"
